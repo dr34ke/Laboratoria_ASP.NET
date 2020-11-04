@@ -1,0 +1,8 @@
+﻿@model FormAdded
+@{
+    ViewData["title"] = "Dodano rekord";
+}
+<h1> Dodano rekord pomyślnie!</h1>
+<div> Ilość znaków w nazwie: @Model.NumOfCharsInName</div>
+<div> Ilość znaków w opisie: @Model.NumOfCharsInDecription</div>
+<div> Czy jest ukryta: @(Model.IsHidden ? "Tak" : "Nie")</div>

@@ -1,0 +1,26 @@
+﻿@model Form;
+
+@{
+    ViewData["title"] = "Formularz Ajax";
+}
+<div id="success-alert" class="alert alert-success" style="display: none"> Element Dodany </div>
+<form method="POST" id="form1">
+    <div class="form-group">
+        <label asp-for="Name"> Nazwa </label>
+        <input asp-for="Name" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="Description"> Opis </label>
+        <input asp-for="Description" class="form-control">
+    </div>
+    <div class="form-group form-check">
+        <input asp-for="IsVisible" class="form-check-input">
+        <label asp-for="IsVisible" class="form-check-label">Czy Widoczne </label>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Dodaj!" />
+    </div>
+</form>
+@section Scripts{
+    <script src="~/js/addNewItem.js"></script>
+}
