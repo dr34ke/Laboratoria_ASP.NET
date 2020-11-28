@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Laboratoria_ASP.NET.Controllers
 {
-    public class ExhangesAJAXController : Controller
+    public class ExchangesAJAXController : Controller
     {
         [HttpGet]
         public IActionResult ShowViewAJAX()
